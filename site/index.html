@@ -245,6 +245,7 @@
             <span>Search publications</span>
             <input id="publication-search" type="search" placeholder="Search title, authors, venue, year..." />
           </label>
+          <p id="publication-search-count" class="muted">Showing 161 entries</p>
           <div class="table-wrap">
             <table id="publications-table">
               <thead>
@@ -3176,12 +3177,23 @@
       const search = document.getElementById('publication-search');
       if (search) {
         const rows = Array.from(document.querySelectorAll('#publications-table tbody tr'));
+        const countEl = document.getElementById('publication-search-count');
+
+        const updateCount = () => {
+          const visible = rows.filter((row) => row.style.display !== 'none').length;
+          if (countEl) {
+            countEl.textContent = `Showing ${visible} entr${visible === 1 ? 'y' : 'ies'}`;
+          }
+        };
+
+        updateCount();
         search.addEventListener('input', () => {
           const query = search.value.trim().toLowerCase();
           rows.forEach((row) => {
             const haystack = row.getAttribute('data-search') || '';
             row.style.display = haystack.includes(query) ? '' : 'none';
           });
+          updateCount();
         });
       }
     })();
