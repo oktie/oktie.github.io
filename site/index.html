@@ -93,6 +93,30 @@
     .pub-num, .year { font-variant-numeric: tabular-nums; color: #a7bbd7; white-space: nowrap; }
     .links { white-space: nowrap; }
     .links a { margin-right: 10px; }
+    .links a.icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      margin-right: 4px;
+      border-radius: 8px;
+      color: var(--muted);
+      text-decoration: none;
+      vertical-align: middle;
+      transition: color 0.15s ease, background 0.15s ease;
+    }
+    .links a.icon-link:hover {
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.06);
+    }
+    .link-icon {
+      width: 16px;
+      height: 16px;
+      display: block;
+    }
+    .link-icon-pdf { color: #ef5350; }
+    .links a.icon-link:hover .link-icon-pdf { color: #ff867c; }
     .disabled-link { pointer-events: none; color: #60738e; text-decoration: none; border-bottom: 1px dotted #60738e; }
     .project-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
     .project-card {
@@ -268,7 +292,7 @@
               <td><strong>O. Hassanzadeh</strong>, Y. Perlitz, N. Pham, T. Kaple, K. Zrobek, L. Vu, M. Glass, D. Subramanian, M. Pourreza, D. Rafiei</td>
               <td>VLDB (Demo Track)</td>
               <td class="year">2026</td>
-              <td class="links"><a href="https://github.com/IBM/text2sql-eval-toolkit" target="_blank" rel="noreferrer">GitHub</a></td>
+              <td class="links"><a href="https://github.com/IBM/text2sql-eval-toolkit" class="icon-link" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><svg class="link-icon" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.18.82.63-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.51-1.04 2.18-.82 2.18-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a></td>
             </tr>
             
             <tr data-search="when text-to-sql evaluation misleads: rethinking benchmarking practices | o. hassanzadeh, y. perlitz, n. pham, t. dinger, t. kaple, l. vu, m. glass, s. subramanian | ieee icde (extended abstract) | 2026">
@@ -279,7 +303,7 @@
               <td><strong>O. Hassanzadeh</strong>, Y. Perlitz, N. Pham, T. Dinger, T. Kaple, L. Vu, M. Glass, S. Subramanian</td>
               <td>IEEE ICDE (Extended Abstract)</td>
               <td class="year">2026</td>
-              <td class="links"><a href="assets/papers/icde2026-extended-abstract.pdf" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="assets/papers/icde2026-extended-abstract.pdf" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="towards universal tabular embeddings: a benchmark across data tasks | l. vogel, k. srinivas, n. s. d&#x27;souza, s. shirai, o. hassanzadeh, h. samulowitz | corr/arxiv | 2026">
@@ -290,7 +314,7 @@
               <td>L. Vogel, K. Srinivas, N. S. D&#x27;Souza, S. Shirai, <strong>O. Hassanzadeh</strong>, H. Samulowitz</td>
               <td>CoRR/arXiv</td>
               <td class="year">2026</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2604.21696" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2604.21696" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="tabsketchfm: sketch-based tabular representation learning for data discovery over data lakes | a. khatiwada, h. kokel, i. abdelaziz, s. chaudhury, j. dolby, o. hassanzadeh, z. huang, t. pedapati, h. samulowitz, k. srinivas | ieee icde | 2025">
@@ -301,7 +325,7 @@
               <td>A. Khatiwada, H. Kokel, I. Abdelaziz, S. Chaudhury, J. Dolby, <strong>O. Hassanzadeh</strong>, Z. Huang, T. Pedapati, H. Samulowitz, K. Srinivas</td>
               <td>IEEE ICDE</td>
               <td class="year">2025</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2407.01619" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2407.01619" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="knowledge base construction for knowledge-augmented text-to-sql | j. baek, h. samulowitz, o. hassanzadeh, d. subramanian, s. shirai, a. gliozzo, d. bhattacharjya | findings of acl | 2025">
@@ -312,7 +336,7 @@
               <td>J. Baek, H. Samulowitz, <strong>O. Hassanzadeh</strong>, D. Subramanian, S. Shirai, A. Gliozzo, D. Bhattacharjya</td>
               <td>Findings of ACL</td>
               <td class="year">2025</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2505.22096" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2505.22096" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="kg2tables: a domain-specific tabular data generator to evaluate semantic table interpretation systems (resource paper) | n. abdelmageed, e. jiménez-ruiz, o. hassanzadeh, b. könig-ries | trans. graph data knowl. | 2025">
@@ -323,7 +347,7 @@
               <td>N. Abdelmageed, E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, B. König-Ries</td>
               <td>Trans. Graph Data Knowl.</td>
               <td class="year">2025</td>
-              <td class="links"><a href="https://doi.org/10.4230/TGDK.3.1.1" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.4230/TGDK.3.1.1" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="topjoin: a context-aware multi-criteria approach for joinable column search | h. kokel, a. khatiwada, t. pedapati, h. ananthakrishnan, o. hassanzadeh, h. samulowitz, k. srinivas | tada workshop @ vldb | 2025">
@@ -334,7 +358,7 @@
               <td>H. Kokel, A. Khatiwada, T. Pedapati, H. Ananthakrishnan, <strong>O. Hassanzadeh</strong>, H. Samulowitz, K. Srinivas</td>
               <td>TaDA Workshop @ VLDB</td>
               <td class="year">2025</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2507.11505" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2507.11505" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="joint proceedings of industry, doctoral consortium, posters and demos of the 24th international semantic web conference (iswc-c 2025) | i. celino, o. hassanzadeh, a. bernstein, n. f. noy, g. cheng, s. wang, s. ferrada, t. soulard, k. kozaki, h. takeda, a. gentile | ceur workshop proceedings 4085, ceur-ws.org (nara, japan, nov 2-6) | 2025">
@@ -345,7 +369,7 @@
               <td>I. Celino, <strong>O. Hassanzadeh</strong>, A. Bernstein, N. F. Noy, G. Cheng, S. Wang, S. Ferrada, T. Soulard, K. Kozaki, H. Takeda, A. Gentile</td>
               <td>CEUR Workshop Proceedings 4085, CEUR-WS.org (Nara, Japan, Nov 2-6)</td>
               <td class="year">2025</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-4085/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the semantic web challenge on tabular data to knowledge graph matching co-located with the 23rd international semantic web conference (iswc 2024) (semtab 2024) | o. hassanzadeh, m. cremaschi, v. cutrona, f. d&#x27;adda, v. efthymiou, b. kruit, e. a. lobo, n. h. pham | ceur workshop proceedings 3889, ceur-ws.org (baltimore, usa, nov 13) | 2025">
@@ -356,7 +380,7 @@
               <td><strong>O. Hassanzadeh</strong>, M. Cremaschi, V. Cutrona, F. D&#x27;Adda, V. Efthymiou, B. Kruit, E. A. Lobo, N. H. Pham</td>
               <td>CEUR Workshop Proceedings 3889, CEUR-WS.org (Baltimore, USA, Nov 13)</td>
               <td class="year">2025</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3889/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the 19th international workshop on ontology matching co-located with iswc 2024 (om-2024) | e. jiménez-ruiz, o. hassanzadeh, c. trojahn, s. hertling, h. li, p. shvaiko, j. euzenat | ceur workshop proceedings 3897, ceur-ws.org (baltimore, usa, nov 11) | 2025">
@@ -367,7 +391,7 @@
               <td>E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, C. Trojahn, S. Hertling, H. Li, P. Shvaiko, J. Euzenat</td>
               <td>CEUR Workshop Proceedings 3897, CEUR-WS.org (Baltimore, USA, Nov 11)</td>
               <td class="year">2025</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3897/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="results of semtab 2025 | o. hassanzadeh, m. cremaschi, f. d&#x27;adda, f. j. azanzi, j. p. bikim, e. jimenez-ruiz | om@iswc | 2025">
@@ -433,7 +457,7 @@
               <td>M. Chang, A. Fokoue-nkoutche, R. Uceda-sosa, P. Awasthy, K. Barker, S. Kumaravel, <strong>O. Hassanzadeh</strong>, E. Figueiredo De Souza Soares, T. Gao, D. Bhattacharjya, H. Florian, S. Roukos</td>
               <td>IAAI</td>
               <td class="year">2024</td>
-              <td class="links"><a href="https://doi.org/10.1609/aaai.v38i21.30323" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1609/aaai.v38i21.30323" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="distilling event sequence knowledge from large language models | s. wadhwa, o. hassanzadeh, d. bhattacharjya, k. barker, j. ni | iswc | 2024">
@@ -444,7 +468,7 @@
               <td>S. Wadhwa, <strong>O. Hassanzadeh</strong>, D. Bhattacharjya, K. Barker, J. Ni</td>
               <td>ISWC</td>
               <td class="year">2024</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2401.07237" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2401.07237" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="wikicausal: corpus and evaluation framework for causal knowledge graph construction | o. hassanzadeh | iswc posters/demos | 2024">
@@ -455,7 +479,7 @@
               <td><strong>O. Hassanzadeh</strong></td>
               <td>ISWC Posters/Demos</td>
               <td class="year">2024</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2409.00331" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2409.00331" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="kg2tables: your way to generate an sti benchmark for your domain | n. abdelmageed, e. jiménez-ruiz, o. hassanzadeh, b. könig-ries | iswc posters/demos | 2024">
@@ -532,7 +556,7 @@
               <td>S. Shirai, D. Bhattacharjya, <strong>O. Hassanzadeh</strong></td>
               <td>WWW</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2309.12423" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2309.12423" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="probabilistic rule induction from event sequences with logical summary markov models | d. bhattacharjya, o. hassanzadeh, r. luss, k. murugesan | ijcai | 2023">
@@ -543,7 +567,7 @@
               <td>D. Bhattacharjya, <strong>O. Hassanzadeh</strong>, R. Luss, K. Murugesan</td>
               <td>IJCAI</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.24963/ijcai.2023/629" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.24963/ijcai.2023/629" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="probabilistic attention-to-influence neural models for event sequences | x. shou, d. bhattacharjya, t. gao, d. subramanian, o. hassanzadeh, k. bennett | icml | 2023">
@@ -565,7 +589,7 @@
               <td>G. Papadakis, V. Efthymiou, E. Thanos, <strong>O. Hassanzadeh</strong>, P. Christen</td>
               <td>VLDB J.</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.1007/s00778-023-00791-3" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1007/s00778-023-00791-3" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="unleashing the potential of data lakes with semantic enrichment using foundation models | n. mihindukulasooriya, s. dash, s. bagchi, f. chowdhury, g. rossiello, a. gliozzo, a. farkash, m. glass, i. gokhman, o. hassanzadeh, n. pham, b. rozenberg, y. sagron, s. subramanian, t. takahashi, t. tateishi, l. vu | iswc industry track | 2023">
@@ -609,7 +633,7 @@
               <td>E. Lobo, <strong>O. Hassanzadeh</strong>, N. Pham, N. Mihindukulasooriya, D. Subramanian, H. Samulowitz</td>
               <td>OM@ISWC</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2309.11506" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2309.11506" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="an evaluation framework for mapping news headlines to event classes in a knowledge graph | s. f. mbouadeu, m. e. lorenzo, k. barker, o. hassanzadeh | case @ ranlp | 2023">
@@ -620,7 +644,7 @@
               <td>S. F. Mbouadeu, M. E. Lorenzo, K. Barker, <strong>O. Hassanzadeh</strong></td>
               <td>CASE @ RANLP</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2312.02334" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2312.02334" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="lakebench: benchmarks for data discovery over data lakes | k. srinivas, j. dolby, i. abdelaziz, o. hassanzadeh, h. kokel, a. khatiwada, t. pedapati, s. chaudhury, h. samulowitz | corr/arxiv | 2023">
@@ -631,7 +655,7 @@
               <td>K. Srinivas, J. Dolby, I. Abdelaziz, <strong>O. Hassanzadeh</strong>, H. Kokel, A. Khatiwada, T. Pedapati, S. Chaudhury, H. Samulowitz</td>
               <td>CoRR/arXiv</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2307.04217" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2307.04217" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="open government data corpus for table search | m. glass, s. bagchi, o. hassanzadeh, g. rossiello, a. gliozzo | corr/arxiv | 2023">
@@ -642,7 +666,7 @@
               <td>M. Glass, S. Bagchi, <strong>O. Hassanzadeh</strong>, G. Rossiello, A. Gliozzo</td>
               <td>CoRR/arXiv</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2308.13560" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2308.13560" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="improving neural ranking models with traditional ir methods | a. saha, o. hassanzadeh, a. gittens, j. ni, k. srinivas, b. yener | corr/arxiv | 2023">
@@ -653,7 +677,7 @@
               <td>A. Saha, <strong>O. Hassanzadeh</strong>, A. Gittens, J. Ni, K. Srinivas, B. Yener</td>
               <td>CoRR/arXiv</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2308.15027" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2308.15027" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="a cross-domain evaluation of approaches for causal knowledge extraction | a. saha, o. hassanzadeh, a. gittens, j. ni, k. srinivas, b. yener | corr/arxiv | 2023">
@@ -664,7 +688,7 @@
               <td>A. Saha, <strong>O. Hassanzadeh</strong>, A. Gittens, J. Ni, K. Srinivas, B. Yener</td>
               <td>CoRR/arXiv</td>
               <td class="year">2023</td>
-              <td class="links"><a href="https://doi.org/10.48550/arXiv.2308.03891" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48550/arXiv.2308.03891" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="joint proceedings of workshops at the 49th international conference on very large data bases (vldb 2023) | r. bordawekar, c. cappiello, v. efthymiou, l. ehrlinger, v. gadepally, s. galhotra, s. geisler, s. groppe, l. gruenwald, a. y. halevy, h. harmouch, o. hassanzadeh, i. f. ilyas, e. jiménez-ruiz, s. krishnan, t. lahiri, g. li, j. lu, w. mauerer, u. farooq minhas, f. naumann, m. t. özsu, e. rezig, k. srinivas, m. stonebraker, s. r. valluri, m. vidal, h. wang, j. wang, y. wu, x. xue, m. zaït, k. zeng | ceur workshop proceedings 3462, ceur-ws.org (vancouver, canada, aug 28 - sep 1) | 2023">
@@ -675,7 +699,7 @@
               <td>R. Bordawekar, C. Cappiello, V. Efthymiou, L. Ehrlinger, V. Gadepally, S. Galhotra, S. Geisler, S. Groppe, L. Gruenwald, A. Y. Halevy, H. Harmouch, <strong>O. Hassanzadeh</strong>, I. F. Ilyas, E. Jiménez-Ruiz, S. Krishnan, T. Lahiri, G. Li, J. Lu, W. Mauerer, U. Farooq Minhas, F. Naumann, M. T. Özsu, E. Rezig, K. Srinivas, M. Stonebraker, S. R. Valluri, M. Vidal, H. Wang, J. Wang, Y. Wu, X. Xue, M. Zaït, K. Zeng</td>
               <td>CEUR Workshop Proceedings 3462, CEUR-WS.org (Vancouver, Canada, Aug 28 - Sep 1)</td>
               <td class="year">2023</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3462/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the semantic web challenge on tabular data to knowledge graph matching, semtab 2023, co-located with iswc 2023 | v. efthymiou, e. jiménez-ruiz, j. chen, v. cutrona, o. hassanzadeh, j. sequeda, k. srinivas, n. abdelmageed, m. hulsebos, a. khatiwada, k. korini, b. kruit | ceur workshop proceedings 3557, ceur-ws.org (athens, greece, nov 6-10) | 2023">
@@ -686,7 +710,7 @@
               <td>V. Efthymiou, E. Jiménez-Ruiz, J. Chen, V. Cutrona, <strong>O. Hassanzadeh</strong>, J. Sequeda, K. Srinivas, N. Abdelmageed, M. Hulsebos, A. Khatiwada, K. Korini, B. Kruit</td>
               <td>CEUR Workshop Proceedings 3557, CEUR-WS.org (Athens, Greece, Nov 6-10)</td>
               <td class="year">2023</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3557/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the 18th international workshop on ontology matching co-located with iswc 2023 (om@iswc 2023) | p. shvaiko, j. euzenat, e. jiménez-ruiz, o. hassanzadeh, c. trojahn | ceur workshop proceedings | 2023">
@@ -697,7 +721,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, C. Trojahn</td>
               <td>CEUR Workshop Proceedings</td>
               <td class="year">2023</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3591/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="results of semtab 2023 | o. hassanzadeh, n. abdelmageed, v. efthymiou, j. chen, v. cutrona, m. hulsebos, e. jiménez-ruiz, a. khatiwada, k. korini, b. kruit, j. sequeda, k. srinivas | semtab@iswc | 2023">
@@ -730,7 +754,7 @@
               <td>D. Bhattacharjya, S. Sihag, <strong>O. Hassanzadeh</strong>, L. Bialik</td>
               <td>IJCAI</td>
               <td class="year">2022</td>
-              <td class="links"><a href="https://doi.org/10.24963/ijcai.2022/670" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.24963/ijcai.2022/670" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="knowledge-based news event analysis and forecasting toolkit | o. hassanzadeh, p. awasthy, k. barker, o. bhardwaj, d. bhattacharjya, m. feblowitz, l. martie, j. ni, k. srinivas, l. yip | ijcai demonstration track | 2022">
@@ -741,7 +765,7 @@
               <td><strong>O. Hassanzadeh</strong>, P. Awasthy, K. Barker, O. Bhardwaj, D. Bhattacharjya, M. Feblowitz, L. Martie, J. Ni, K. Srinivas, L. Yip</td>
               <td>IJCAI Demonstration Track</td>
               <td class="year">2022</td>
-              <td class="links"><a href="https://doi.org/10.24963/ijcai.2022/850" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.24963/ijcai.2022/850" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="knowledge-based news event analysis toolkit | o. hassanzadeh, p. awasthy, k. barker, o. bhardwaj, d. bhattacharjya, m. feblowitz, a. khatiwada, l. martie, s. f. mbouadeu, j. ni, a. saha, s. shirai, k. srinivas, l. yip | iswc industry track | 2022">
@@ -763,7 +787,7 @@
               <td>G. Papadakis, V. Efthymiou, E. Thanos, <strong>O. Hassanzadeh</strong></td>
               <td>EDBT</td>
               <td class="year">2022</td>
-              <td class="links"><a href="https://doi.org/10.48786/edbt.2022.41" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.48786/edbt.2022.41" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="spock at fincausal 2022: causal information extraction using span-based and sequence tagging models | a. saha, j. ni, o. hassanzadeh, a. gittens, k. srinivas, b. yener | fincausal @ lrec (winning team) | 2022">
@@ -807,7 +831,7 @@
               <td>V. Efthymiou, E. Jiménez-Ruiz, J. Chen, V. Cutrona, <strong>O. Hassanzadeh</strong>, J. Sequeda, K. Srinivas, N. Abdelmageed, M. Hulsebos</td>
               <td>CEUR Workshop Proceedings</td>
               <td class="year">2022</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3320/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the 17th international workshop on ontology matching co-located with iswc 2022 (om@iswc 2022) | p. shvaiko, j. euzenat, e. jiménez-ruiz, o. hassanzadeh, c. trojahn | ceur workshop proceedings | 2022">
@@ -818,7 +842,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, C. Trojahn</td>
               <td>CEUR Workshop Proceedings</td>
               <td class="year">2022</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3324/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="open knowledge network roadmap – powering the next data revolution | c. baru, et al. | nsf report (september) | 2022">
@@ -829,7 +853,7 @@
               <td>C. Baru, et al.</td>
               <td>NSF Report (September)</td>
               <td class="year">2022</td>
-              <td class="links"><a href="assets/papers/OKN%20Roadmap%20-%20Report_v03.pdf" target="_blank" rel="noreferrer">PDF</a><a href="https://nsf-gov-resources.nsf.gov/2022-09/OKN%20Roadmap%20-%20Report_v03.pdf" target="_blank" rel="noreferrer">Source</a></td>
+              <td class="links"><a href="assets/papers/OKN%20Roadmap%20-%20Report_v03.pdf" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a><a href="https://nsf-gov-resources.nsf.gov/2022-09/OKN%20Roadmap%20-%20Report_v03.pdf" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="ibm scenario planning advisor: a neuro-symbolic erm solution | m. feblowitz, o. hassanzadeh, m. katz, s. sohrabi, k. srinivas, o. udrea | aaai (demonstration) | 2021">
@@ -840,7 +864,7 @@
               <td>M. Feblowitz, <strong>O. Hassanzadeh</strong>, M. Katz, S. Sohrabi, K. Srinivas, O. Udrea</td>
               <td>AAAI (Demonstration)</td>
               <td class="year">2021</td>
-              <td class="links"><a href="https://doi.org/10.1609/aaai.v35i18.18003" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1609/aaai.v35i18.18003" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="predicting the future with wikidata and wikipedia | o. hassanzadeh | iswc demonstration | 2021">
@@ -862,7 +886,7 @@
               <td>M. Feblowitz, <strong>O. Hassanzadeh</strong>, M. Katz, S. Sohrabi, K. Srinivas, O. Udrea</td>
               <td>AAAI Demonstration</td>
               <td class="year">2021</td>
-              <td class="links"><a href="https://doi.org/10.1609/aaai.v35i18.18003" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1609/aaai.v35i18.18003" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="unsupervised causal knowledge extraction from text using natural language inference | m. bhandari, m. feblowitz, o. hassanzadeh, k. srinivas, s. sohrabi | aaai student abstract | 2021">
@@ -917,7 +941,7 @@
               <td>E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, V. Efthymiou, J. Chen, K. Srinivas, V. Cutrona</td>
               <td>CEUR Workshop Proceedings</td>
               <td class="year">2021</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3103/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the 16th international workshop on ontology matching co-located with iswc 2021 (om@iswc 2021) | p. shvaiko, j. euzenat, e. jiménez-ruiz, o. hassanzadeh, c. trojahn | ceur workshop proceedings | 2021">
@@ -928,7 +952,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, C. Trojahn</td>
               <td>CEUR Workshop Proceedings</td>
               <td class="year">2021</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-3063/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="results of semtab 2021 | v. cutrona, j. chen, v. efthymiou, o. hassanzadeh, e. jiménez-ruiz, j. sequeda, k. srinivas, n. abdelmageed, m. hulsebos, d. oliveira, c. pesquita | semtab@iswc | 2021">
@@ -972,7 +996,7 @@
               <td><strong>O. Hassanzadeh</strong>, D. Bhattacharjya, M. Feblowitz, K. Srinivas, M. Perrone, S. Sohrabi, M. Katz</td>
               <td>AAAI (Demonstration)</td>
               <td class="year">2020</td>
-              <td class="links"><a href="https://doi.org/10.1609/aaai.v34i09.7092" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1609/aaai.v34i09.7092" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="ibm scenario planning advisor: a neuro-symbolic erm solution | m. feblowitz, o. hassanzadeh, m. katz, s. sohrabi, k. srinivas, o. udrea | icaps system demonstration (best system demonstration award) | 2020">
@@ -983,7 +1007,7 @@
               <td>M. Feblowitz, <strong>O. Hassanzadeh</strong>, M. Katz, S. Sohrabi, K. Srinivas, O. Udrea</td>
               <td>ICAPS System Demonstration (Best System Demonstration Award)</td>
               <td class="year">2020</td>
-              <td class="links"><a href="https://doi.org/10.1609/aaai.v35i18.18003" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1609/aaai.v35i18.18003" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="semtab 2019: resources to benchmark tabular data to knowledge graph matching systems | e. jiménez-ruiz, o. hassanzadeh, v. efthymiou, j. chen, k. srinivas | eswc | 2020">
@@ -1027,7 +1051,7 @@
               <td>E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, V. Efthymiou, J. Chen, K. Srinivas, V. Cutrona</td>
               <td>CEUR Workshop Proceedings (November 5)</td>
               <td class="year">2020</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-2775/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the 15th international workshop on ontology matching co-located with iswc 2020 (om@iswc 2020) | p. shvaiko, j. euzenat, e. jiménez-ruiz, o. hassanzadeh, c. trojahn | ceur workshop proceedings 2788, ceur-ws.org | 2020">
@@ -1038,7 +1062,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, C. Trojahn</td>
               <td>CEUR Workshop Proceedings 2788, CEUR-WS.org</td>
               <td class="year">2020</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-2788/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the semantic web challenge on tabular data to knowledge graph matching co-located with iswc 2019 (semtab@iswc 2019) | e. jiménez-ruiz, o. hassanzadeh, k. srinivas, v. efthymiou, j. chen | ceur workshop proceedings 2553, ceur-ws.org (auckland, new zealand, oct 30) | 2020">
@@ -1049,7 +1073,7 @@
               <td>E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, K. Srinivas, V. Efthymiou, J. Chen</td>
               <td>CEUR Workshop Proceedings 2553, CEUR-WS.org (Auckland, New Zealand, Oct 30)</td>
               <td class="year">2020</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-2553/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the 14th international workshop on ontology matching co-located with iswc 2019 (om@iswc 2019) | p. shvaiko, j. euzenat, e. jiménez-ruiz, o. hassanzadeh, c. trojahn | ceur workshop proceedings 2536, ceur-ws.org (auckland, new zealand, oct 26) | 2020">
@@ -1060,7 +1084,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, <strong>O. Hassanzadeh</strong>, C. Trojahn</td>
               <td>CEUR Workshop Proceedings 2536, CEUR-WS.org (Auckland, New Zealand, Oct 26)</td>
               <td class="year">2020</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-2536/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="results of semtab 2020 | e. jiménez-ruiz, o. hassanzadeh, v. efthymiou, j. chen, k. srinivas, v. cutrona | semtab@iswc | 2020">
@@ -1082,7 +1106,7 @@
               <td><strong>O. Hassanzadeh</strong>, D. Bhattacharjya, M. D. Feblowitz, K. Srinivas, M. Perrone, S. Sohrabi, M. Katz</td>
               <td>IJCAI</td>
               <td class="year">2019</td>
-              <td class="links"><a href="https://doi.org/10.24963/ijcai.2019/695" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.24963/ijcai.2019/695" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="ibm scenario planning advisor: plan recognition as ai planning in practice | s. sohrabi, m. katz, o. hassanzadeh, o. udrea, m. d. feblowitz, a. riabov | ai commun. | 2019">
@@ -1093,7 +1117,7 @@
               <td>S. Sohrabi, M. Katz, <strong>O. Hassanzadeh</strong>, O. Udrea, M. D. Feblowitz, A. Riabov</td>
               <td>AI Commun.</td>
               <td class="year">2019</td>
-              <td class="links"><a href="https://doi.org/10.24963/ijcai.2018/864" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.24963/ijcai.2018/864" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="automated feature enhancement for predictive modeling using external knowledge | s. galhotra, u. khurana, o. hassanzadeh, k. srinivas, h. samulowitz, m. qi | icdm demonstration track | 2019">
@@ -1148,7 +1172,7 @@
               <td>S. Sohrabi, M. Katz, <strong>O. Hassanzadeh</strong>, O. Udrea, M. D. Feblowitz</td>
               <td>IJCAI (Runner-Up Best Demo Award)</td>
               <td class="year">2018</td>
-              <td class="links"><a href="https://doi.org/10.24963/ijcai.2018/864" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.24963/ijcai.2018/864" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="inducing implicit relations from text using distantly supervised deep nets | m. glass, a. gliozzo, o. hassanzadeh, n. mihindukulasooriya, g. rossiello | iswc | 2018">
@@ -1181,7 +1205,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, M. Cheatham, <strong>O. Hassanzadeh</strong>, R. Ichise</td>
               <td>CEUR Workshop Proceedings 2288, CEUR-WS.org (Monterey, CA, USA, Oct 8)</td>
               <td class="year">2018</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-2288/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="semantic concept discovery over event databases | o. hassanzadeh, s. trewin, a. gliozzo | us patent application. filed october 2018 | 2018">
@@ -1247,7 +1271,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, M. Cheatham, <strong>O. Hassanzadeh</strong>, R. Ichise</td>
               <td>CEUR Workshop Proceedings 2032, CEUR-WS.org (Vienna, Austria, Oct 21)</td>
               <td class="year">2017</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-2032/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="predicting drug-drug interactions through large-scale similarity-based link prediction | a. fokoue, m. sadoghi, o. hassanzadeh, p. zhang | eswc (best in-use track paper award) | 2016">
@@ -1280,7 +1304,7 @@
               <td>M. Sadoghi, K. Srinivas, <strong>O. Hassanzadeh</strong>, Y. Chang, M. Canim, A. Fokoue, Y. Feldman</td>
               <td>EDBT</td>
               <td class="year">2016</td>
-              <td class="links"><a href="https://doi.org/10.5441/002/edbt.2016.43" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.5441/002/edbt.2016.43" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="tiresias: knowledge engineering and large-scale machine learning for interpretable drug-drug interaction prediction | a. fokoue, o. hassanzadeh, m. sadoghi, p. zhang | amia system demonstration | 2016">
@@ -1324,7 +1348,7 @@
               <td>S. Sohrabi, A. V. Riabov, O. Udrea, <strong>O. Hassanzadeh</strong></td>
               <td>ECAI</td>
               <td class="year">2016</td>
-              <td class="links"><a href="https://doi.org/10.3233/978-1-61499-672-9-1581" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.3233/978-1-61499-672-9-1581" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="interactive planning-based hypothesis generation with lts++ | s. sohrabi, a. v. riabov, o. udrea, o. hassanzadeh | ijcai | 2016">
@@ -1346,7 +1370,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, M. Cheatham, <strong>O. Hassanzadeh</strong>, R. Ichise</td>
               <td>CEUR Workshop Proceedings 1766 (Kobe, Japan, Oct 18)</td>
               <td class="year">2016</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-1766/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="proceedings of the 10th international workshop on ontology matching collocated with iswc 2015 (om@iswc 2015) | p. shvaiko, j. euzenat, e. jiménez-ruiz, m. cheatham, o. hassanzadeh | ceur workshop proceedings 1545 (bethlehem, pa, usa, oct 12) | 2016">
@@ -1357,7 +1381,7 @@
               <td>P. Shvaiko, J. Euzenat, E. Jiménez-Ruiz, M. Cheatham, <strong>O. Hassanzadeh</strong></td>
               <td>CEUR Workshop Proceedings 1545 (Bethlehem, PA, USA, Oct 12)</td>
               <td class="year">2016</td>
-              <td class="links"></td>
+              <td class="links"><a href="https://ceur-ws.org/Vol-1545/" class="icon-link" target="_blank" rel="noreferrer" aria-label="Source" title="Source"><svg class="link-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a></td>
             </tr>
             
             <tr data-search="system and method for learning semantic-aware graph embeddings using set-centric approach | g. i. diaz, a. fokoue, m. sadoghi, o. hassanzadeh, m. rodriguez-muro | ibm docket yor820161380. filed november 2016. | 2016">
@@ -1434,7 +1458,7 @@
               <td>S. Ayvaz, J. R. Horn, <strong>O. Hassanzadeh</strong>, Q. Zhu, J. Stan, N. P. Tatonetti, S. Vilar, M. Brochhausen, M. Samwald, M. Rastegar-Mojarad, M. Dumontier, R. D. Boyce</td>
               <td>J. Biomedical Informatics</td>
               <td class="year">2015</td>
-              <td class="links"><a href="https://doi.org/10.1016/j.jbi.2015.04.006" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1016/j.jbi.2015.04.006" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="schema management for document stores | l. wang, o. hassanzadeh, s. zhang, j. shi, l. jiao, j. zou, c. wang | pvldb | 2015">
@@ -1599,7 +1623,7 @@
               <td>R. D. Boyce, J. R. Horn, <strong>O. Hassanzadeh</strong>, A. de Waard, J. Schneider, J. S. Luciano, M. Rastegar-Mojarad, M. Liakata</td>
               <td>J. Biomedical Semantics</td>
               <td class="year">2013</td>
-              <td class="links"><a href="https://doi.org/10.1186/2041-1480-4-5" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1186/2041-1480-4-5" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="method and apparatus of replicating records based on correlated attributes for multi-column range summaries | m. sadoghi hamedani, t. malkemus, y. chang, o. hassanzadeh | ibm docket yor820130867. filed september 2013. | 2013">
@@ -1654,7 +1678,7 @@
               <td>S. Duan, A. Fokoue, <strong>O. Hassanzadeh</strong>, A. Kementsietsidis, K. Srinivas, M. J. Ward</td>
               <td>ISWC</td>
               <td class="year">2012</td>
-              <td class="links"><a href="https://doi.org/10.1007/978-3-642-35176-1_4" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1007/978-3-642-35176-1_4" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="data management issues on the semantic web | o. hassanzadeh, a. kementsietsidis, y. velegrakis | icde seminar | 2012">
@@ -1731,7 +1755,7 @@
               <td>M. Samwald, A. Jentzsch, C. Bouton, C. Kallesøe, E. Willighagen, J. Hajagos, M. S. Marshall, E. Prud&#x27;hommeaux, <strong>O. Hassanzadeh</strong>, E. Pichler, S. Stephens</td>
               <td>J. Cheminformatics</td>
               <td class="year">2011</td>
-              <td class="links"><a href="https://doi.org/10.1186/1758-2946-3-19" target="_blank" rel="noreferrer">PDF</a></td>
+              <td class="links"><a href="https://doi.org/10.1186/1758-2946-3-19" class="icon-link" target="_blank" rel="noreferrer" aria-label="PDF" title="PDF"><svg class="link-icon link-icon-pdf" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 12h6"/><path d="M9 16h6"/></svg></a></td>
             </tr>
             
             <tr data-search="helix: online enterprise data analytics | o. hassanzadeh, s. duan, a. fokoue, a. kementsietsidis, k. srinivas, m. j. ward | www demo track | 2011">
